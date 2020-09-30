@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS advanced carousel</title>
+    <style>
+        body{background-color: olive;}
+        .carousel{width: 800px;
+        height: 700px;
+        margin:20px auto;
+        border: 5px solid olivedrab;
+        overflow: hidden;
+        transition: 1s;}
+        .carousel .slides{
+        height: 600px;
+        width: 2415px;}
+        .carousel>.controls{background-color: darkgoldenrod;
+        height: 100px;
+        width: 800px;
+        text-align: center;}
+        .carousel>.controls img{height: 100px;}
+        #s2:target .slides{margin-left: -800px;}
+        #s3:target .slides{margin-left: -1610px;}
+    </style>
+</head>
+<body>
+    <div class="carousel">
+    <div id="s1">
+        <div id="s2">
+            <div id="s3">
+                <div class="slides">
+                    <img src="https://noi.md/uploads/images/Day_report/2019_11_13/404059.jpg" alt="images">
+                    <img src="https://noi.md/uploads/images/Day_report/2019_09_22/392462.jpg" alt="images">
+                    <img src="https://noi.md/uploads/images/Day_report/2017_10_16/250051.jpg" alt="images">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="controls">
+            <a href="#s1"><img src="https://noi.md/uploads/images/Day_report/2019_11_13/404059.jpg" alt="images"></a>
+            <a href="#s2"><img src="https://noi.md/uploads/images/Day_report/2019_09_22/392462.jpg" alt="images"></a>
+            <a href="#s3"><img src="https://noi.md/uploads/images/Day_report/2017_10_16/250051.jpg" alt="images"></a>
+
+        </div>
+    </div>
+    
+</body>
+</html>
